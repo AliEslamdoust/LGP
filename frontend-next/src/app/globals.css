@@ -1,0 +1,158 @@
+/* Copyright (c) 2025 Ali Eslamdoust
+MIT License */
+
+@font-face {
+  font-family: FontAwesome;
+  src: url("./FontAwesome/webfonts/fa-thin-100.ttf");
+}
+
+@font-face {
+  font-family: IranYekan;
+  src: url("./fonts/IranYekan/IranYekan-regular.woff2");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Thin.ttf");
+  font-weight: 100;
+}
+
+:root {
+  --font-awesome: FontAwesome;
+  /* --main-bg: #e0e0e0;
+  --secondary-bg: #f0f8ff;
+  --text-color-0: #333333;
+  --text-color-1: #444444;
+  --text-highlight-0: #a0c4ff;
+  --text-highlight-1: #89b3fe;
+  --main-border: #d0d0d0;
+  --secondary-border: #c8c8c8;
+  --body-bg: #f5f5f5; */
+  --text-color-dark: #333333;
+  --white: #ffffff;
+  --primary-light: #ff5557;
+  --red: #f61800;
+  --blue: #0073f6;
+  --primary: #f61800;
+  --primary-dark: #d61400;
+  --primary-very-dark: #b61000;
+  --secondary: #f6d5d1;
+  --secondary-dark: #f0f0f0;
+  --secondary-very-dark: #d8d8d8;
+  --primary-text: #030303;
+  --primary-bg: #221f2e;
+  --main-bg: #ffffff;
+  --secondary-bg: #e4e6ea;
+  --border-color: #8c8c8c;
+  --light-border-color: #dbdbdb;
+  --success: #4caf50;
+  --warning: #ffeb3b;
+  --secondary-text: #666666;
+  --light-primary: #f61800;
+  --light-primary-dark: #d61400;
+  --light-primary-very-dark: #b61000;
+  --light-secondary: #f6d5d1;
+  --light-secondary-dark: #f0f0f0;
+  --light-secondary-very-dark: #d8d8d8;
+  --light-primary-text: #030303;
+  --light-primary-bg: #221f2e;
+  --light-main-bg: #ffffff;
+  --light-secondary-bg: #e4e6ea;
+  --light-border-color: #8c8c8c;
+  --light-light-border-color: #dbdbdb;
+  --light-success: #4caf50;
+  --light-warning: #ffeb3b;
+  --light-secondary-text: #666666;
+  --dark-primary: #ff6659;
+  --dark-primary-dark: #e65c50;
+  --dark-primary-very-dark: #cc5246;
+  --dark-secondary: #4a3331;
+  --dark-secondary-dark: #333333;
+  --dark-secondary-very-dark: #202020;
+  --dark-primary-text: #e0e0e0;
+  --dark-main-bg: #121212;
+  --dark-secondary-bg: #282828;
+  --dark-border-color: #666666;
+  --dark-light-border-color: #585858;
+  --dark-success: #66bb6a;
+  --dark-warning: #ffca28;
+  --dark-secondary-text: #999999;
+}
+
+html.dark-mode {
+  /* --main-bg: #282828;
+  --secondary-bg: #2c3338;
+  --text-color-0: #d1d1d1;
+  --text-color-1: #f0f0f0;
+  --text-highlight-0: #89bdd3;
+  --text-highlight-1: #48bfe3;
+  --main-border: #444444;
+  --secondary-border: #555555;
+  --body-bg: #3a3a3a; */
+
+  --primary: #ff6659;
+  --primary-dark: #e65c50;
+  --primary-very-dark: #cc5246;
+  --secondary: #4a3331;
+  --secondary-dark: #333333;
+  --secondary-very-dark: #202020;
+  --primary-text: #e0e0e0;
+  --primary-bg: #121212;
+  --main-bg: #121212;
+  --secondary-bg: #282828;
+  --border-color: #666666;
+  --light-border-color: #585858;
+  --success: #66bb6a;
+  --warning: #ffca28;
+  --secondary-text: #999999;
+}
+
+* {
+  font-family: Roboto, IranYekan, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s cubic-bezier(0.55, 0.08, 0.49, 0.91);
+  color: var(--primary-text);
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+body > .container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}

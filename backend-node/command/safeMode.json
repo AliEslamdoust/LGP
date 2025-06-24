@@ -1,0 +1,38 @@
+{
+    "macos": [
+        "kernel_task",
+        "launchd",
+        "mds",
+        "WindowServer",
+        "coreaudiod",
+        "systemd",
+        "syslogd",
+        "configd",
+        "powerd",
+        "node"
+    ],
+    "windows": [
+        "System Idle Process",
+        "System",
+        "smss.exe",
+        "csrss.exe",
+        "wininit.exe",
+        "services.exe",
+        "lsass.exe",
+        "winlogon.exe",
+        "svchost.exe",
+        "node.exe"
+    ],
+    "ubuntu": [
+        "systemd",
+        "kthreadd",
+        "rcu_sched",
+        "migration",
+        "init",
+        "journald",
+        "rsyslogd",
+        "NetworkManager",
+        "sshd",
+        "node"
+    ]
+}
